@@ -1,0 +1,27 @@
+extends layout
+
+block content
+	h1 Add new Contacts
+	
+	form(method="POST" , action="/new_contact")
+		p Name:
+		input#title(type="text" , name="name")
+		p Phone No:
+		input#body(type="text" , name="phone")
+		p: button(type="submit") Add New Contact
+	h1 Add new Database this is for example.In real life app databse is already set up
+	form(method="POST" , action="/createdb")
+		p Database name:
+		input#title(type="text" , name="dbname")
+		p: button(type="submit") Add New Database
+	h1 enter phone number to delete contact
+	form(method="POST" , action="/delete_contact")
+		p Phone no:
+		input#title(type="text" , name="phone")
+		p: button(type="submit") Delete contacts
+	h1 View Specific contacts
+	form(method="POST" , action="/view_contact")
+		p Phone no:
+		input#title(type="text" , name="phone")
+		p: button(type="submit") Search Contact
+	
