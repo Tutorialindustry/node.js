@@ -1,0 +1,11 @@
+h1 Showing All Articles
+
+ul
+ - each article in articles
+  li  article Title: #{article.title}
+  li  article Body: #{article.body}
+  hr
+
+a(href="articles/new") Add New Article
+br 
+a(href="") Home

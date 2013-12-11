@@ -1,0 +1,9 @@
+h1 Add new Article
+
+form(method="POST" , action="/articles")
+ p Title:
+   input#title(type="text" , name="title")
+ p Body:
+   input#body(type="textarea" , name="body")
+ 
+ p: button(type="submit") Add New Article
