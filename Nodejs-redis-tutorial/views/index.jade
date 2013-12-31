@@ -1,0 +1,28 @@
+extends layout
+
+block content
+	h1 string operation using redis
+	<br/>
+	h3 Add new String key (Note : key must be unique)
+	
+	form(method="post" , action="/new_key")
+		p key:
+		input#title(type="text" , name="key")
+		p value:
+		input#body(type="text" , name="value")
+		p: button(type="submit") Add New Key/value to redis
+	
+	h3 update  String value (Note : key must Exist, If not a new record will be created)
+	form(method="POST" , action="/new_key")
+		p key:
+		input#title(type="text" , name="key")
+		p value:
+		input#body(type="text" , name="value")
+		p: button(type="submit") Edit value
+	
+	h3 Enter key to see what the value stored
+	form(method="POST" , action="/get_key")
+		p key:
+		input#title(type="text" , name="key")
+		p: button(type="submit") Search Contact
+	

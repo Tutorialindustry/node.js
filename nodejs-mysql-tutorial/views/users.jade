@@ -1,0 +1,11 @@
+h1 Showing All Users
+
+ul
+ - each user in users
+  li  User FirstName: #{user.fname}
+  li  User LastName: #{user.lname}
+  hr
+
+a(href="users/new") Add New User
+br 
+a(href="/") Home
