@@ -1,11 +1,9 @@
-
 /**
  * Module dependencies.
  */
 
 var express = require('express');
 var routes = require('./routes');
-var createdb = require('./routes/createdb');
 var http = require('http');
 var path = require('path');
 /*include the nano module*/
