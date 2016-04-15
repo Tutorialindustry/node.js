@@ -1,0 +1,17 @@
+extends layout
+
+block content
+	h1 Enter file name and data( a text file will be created and we can read it back by providing the name later
+	form(method="post" , action="/createfile")
+		p File Name:
+		input(type="text" , name="file_name" , id="file_name")
+		p File content:
+		textarea(cols="15" , rows="5" , name="file_data" , id="file_data")
+		p: button(type="submit") Submit
+	<br/>
+	h1 Enter file name if itexist data will be read back
+	
+	form(method="post" , action="/readfile")
+		p File Name:
+		input(type="text" , name="file_name" , id="file_name")
+		p: button(type="submit") Submit
