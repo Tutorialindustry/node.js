@@ -10,3 +10,4 @@
     "jade": "*"
   }
 }
+/* byte module should be added in dependencies */
